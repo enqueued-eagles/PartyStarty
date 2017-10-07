@@ -44,7 +44,8 @@ app.use(cookieParser());
 app.use(session({
   secret: 'secret',
   resave: false,
-  saveUninitialized: true
+  saveUninitialized: true,
+  cookie: { maxAge: 600000000 }
 }));
 
 app.use('/recipes', recipeRouter);

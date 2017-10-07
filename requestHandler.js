@@ -16,6 +16,7 @@ module.exports = {
   addUser: users.addUser,
   
   // EVENT handlers
+  userEvents: events.userEvents,
   getEvents: events.getEvents,
   getEventDetail: events.getEventDetail,
   getAllEvents: events.getAllEvents,

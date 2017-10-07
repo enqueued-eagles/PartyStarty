@@ -74,17 +74,31 @@ class App extends React.Component {
     return (
       <li className='mapOfEvents'>
         {this.state[type].map((event,i) => {
-          return (
-            <Link to='/eventpage' key={i} style={{fontSize:`180%`}}>
-              <button key={i}
-              type='button'
-              className='goToEvent'
-              onClick={this.setLookingAtEvent}
-              value={event.eventId}
-              > {event.eventTitle} </button>
-              <br/>
-            </Link>
-          )
+          if (i) {
+            return (
+              <Link to='/eventpage' key={i} style={{fontSize:`180%`}}>
+                <button key={i}
+                type='button'
+                className={`goToEvent btn`}
+                onClick={this.setLookingAtEvent}
+                value={event.eventId}
+                > {event.eventTitle} </button>                
+                <br/>
+              </Link>
+            )
+          } else {
+            return (
+              <Link to='/eventpage' key={i} style={{fontSize:`180%`}}>
+                <button key={i}
+                type='button'
+                className={`goToEvent2 btn`}
+                onClick={this.setLookingAtEvent}
+                value={event.eventId}
+                > {event.eventTitle} </button>
+                <br/>
+              </Link>
+            )
+          }
         })}
       </li>
     )

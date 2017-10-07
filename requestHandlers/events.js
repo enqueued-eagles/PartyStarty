@@ -101,7 +101,17 @@ exports.getAllEvents = function(req, res, next) {
     });
 };
 
-
+exports.userEvents = function(req, res, next) {
+  var user = req.session.user.username;
+  Event.find({eventHostName: user})
+    .exec(function(err, events) {
+      if (events) {
+        res.send(events);
+      } else {
+        res.send('Events do not exist baby', err);
+      }
+    })
+};
 
 exports.getEvents = function(req, res, next) {
   var username = req.session.user.username;

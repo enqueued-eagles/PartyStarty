@@ -11,7 +11,8 @@ class EventListEntry extends React.Component {
     }
   }
 
-grabFilmPoster() {
+grabFilmPoster(e) {
+  e.preventDefault();
   console.log(this.props);
   if (this.state.posters && !this.state.posters.length) {
     axios.get('/movies', { params: {eventId: this.props.event._id }})
@@ -29,7 +30,7 @@ grabFilmPoster() {
   render() {
     return (
       <div className="video-list-entry">
-        <li onClick={() => this.grabFilmPoster()} className="list-group-item">
+        <li onClick={(e) => this.grabFilmPoster(e)} className="list-group-item">
         <h4 className="homeText">{this.props.event.eventTitle}</h4>
         <p className="homeText"><img src="/glyphicons-21-home.png"/>  {this.props.event.eventLocation}</p>
         <p className="homeText"><img src="/glyphicons-46-calendar.png"/>  {this.props.event.eventDate.slice(0, 15)} - {this.props.event.eventTime}</p>

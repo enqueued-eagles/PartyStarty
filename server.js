@@ -100,6 +100,7 @@ app.delete('/invite', util.checkUser, requestHandler.removeInvite);
 app.post('/create', util.checkUser, requestHandler.addEvent);
 app.get('/publicEvents', util.checkUser, requestHandler.getPublicEvents);
 app.get('/getEvents', util.checkUser, requestHandler.getEvents);
+app.get('/userEvents', util.checkUser, requestHandler.userEvents);
 app.get('/event/:event_id', requestHandler.getEventDetail);
 // app.get('/event/:event_id', util.checkUser, requestHandler.getEventDetail);
 app.get('/events', requestHandler.getAllEvents)

@@ -12,7 +12,7 @@ const EventVoter = (props) => (
       on {props.event.eventDate} {props.event.eventTime}
       <br/>
       at {props.event.eventLocation}
-      <br />
+      <br gi/>
       Distribute 10 Points among the Movie Options to figure out what Movie we'll watch.
     </div>
 
@@ -85,7 +85,7 @@ const EventVoter = (props) => (
           </select>
         </div>
       </form>
-
+      <div>
       <button
         type="button" 
         className="btn btn-primary" 
@@ -94,6 +94,7 @@ const EventVoter = (props) => (
       >
         Vote
       </button>
+      </div>
 
     </div>
 

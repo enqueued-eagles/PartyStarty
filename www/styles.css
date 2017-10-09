@@ -1,0 +1,569 @@
+.tt-query {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.tt-hint {
+  color: #999
+}
+
+.tt-menu {    /* used to be tt-dropdown-menu in older versions */
+  width: 422px;
+  margin-top: 0px;
+  padding: 4px 0;
+  background-color: #e3e8ef;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+     -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+          box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  animation: ease-in-out;
+}
+
+.tt-suggestion {
+  padding: 3px 5px;
+  line-height: 24px;
+}
+
+.tt-suggestion.tt-cursor,.tt-suggestion:hover {
+  color: #fff;
+  background-color: #0097cf;
+
+}
+
+.tt-suggestion p {
+  margin: 0;
+}
+#home{
+  margin: auto;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  margin-right: -20px;
+  max-width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.invitesHeader {
+  display: block:
+}
+
+.finishCreatingButton {
+  float: right;
+}
+
+.list-group-item:hover {
+  border-color: blue;
+}
+
+@keyframes reveal {
+  from {height: 110px;}
+  to {height: 338px;}
+}
+
+@keyframes hide {
+  from {height: 338px;}
+  to {height: 64px;}
+}
+
+.postersContainer {
+  /* height: 458px; */
+  /* width: 392.8px */
+  animation-name: reveal;
+  animation-duration: 2s;
+  overflow: auto;
+}
+
+.openPostersContainer {
+  animation-name: hide;
+  animation-duration: 2s;
+}
+
+h2 {
+  /* padding-top: 15px; */
+}
+
+.w-75 {
+  width: 100% !important
+}
+
+/* .w-50 {
+  position: absolute;
+  right: 0px;
+  margin-right: 4%;
+} */
+
+.filmBar {
+  display: flex;
+}
+
+.filmsButton {
+  position: absolute;
+  right: 5%;
+}
+
+
+.twitter-typeahead {
+  width: 85%;
+}
+
+.bugsLife {
+  height: 500px;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.h4 {
+  color: white;
+}
+.createpage {
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 1px solid black;
+  padding: 3%;
+}
+.navbar{
+display: flex;
+justify-content: space-around;
+/*background-color: black;*/
+}
+
+.qEntry{
+  display: inline-block;
+  justify-content: center;
+}
+.center {
+  margin: auto;
+}
+.nav-brand {
+  color: white;
+  margin-left: 0;
+  font-size: 40px;
+  padding-right: 40px;
+}
+#logout:hover{
+  cursor: pointer;
+  color: #2257ad;
+}
+
+.signInForm {
+  margin-top: 10%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+ /* margin: 50%;
+  width: 50%;*/
+}
+
+.signInForm * {
+  margin: 5px;
+}
+
+.btn {
+  border: 1px grey solid;
+}
+
+.dropper {
+  position: relative;
+  padding-right: 25%;
+  margin-right: 2%;
+}
+
+
+.nav {
+  /* display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none; */
+}
+
+.btnSub {
+  float: right;
+}
+.subH {
+  float: left;
+}
+
+.homeText {
+  margin-bottom: 1;
+}
+
+
+.userInput, .passInput {
+  padding: 5px;
+  margin: 5px 0px 5px 0px;
+} 
+
+#title {
+  font-size: 40px;
+  font-weight: bolder;
+  /*background: -webkit-linear-gradient(green, yellow);*/
+  /* webkit-background-clip: text; */
+  /*-webkit-text-fill-color: transparent;*/
+  font-family: 'Helvetica';
+  padding: 0;
+}
+
+.searchComp {
+  border: 1px solid black;
+  padding: 3%;
+}
+
+@keyframes foodReveal {
+  from {height: 0%;}
+  to {height: 100%;}
+}
+
+
+.searchFoodContainer {
+  border: 1px solid black;
+  padding: 3%;
+}
+
+.foodDisplay {
+  animation-name: foodReveal;
+  animation-duration: 1s;
+  overflow: auto;
+}
+
+.searchHeader {
+  text-align: center
+}
+
+/* //158 */
+
+.card-header {
+  /*color: grey;*/
+  display: flex;
+  justify-content: center;
+}
+
+/* TEMPORARY */
+.card-img-list { 
+  height: 250px;
+  width: 150px
+}
+
+.center {
+  margin: auto;
+}
+
+.userHead {
+  font-size: 300%;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 3%;
+}
+
+.userEvents {
+  font-size: 250%;
+  text-align: center;
+}
+
+.posters {
+  height: 250;
+  width: 150px;
+}
+
+.eventButtons {
+  font-size: 200%;
+  text-align: center;
+  display: block;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.eventsContainer {
+  height: 80%;
+}
+
+.invited {
+  margin-top: 6%;
+  margin-bottom: 7%;
+}
+
+.going {
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+
+.goToEvent {
+  background-color: rgba(255, 163, 0, 0.82);
+  width: 93%;
+  margin-top: 1%;
+}
+
+.goToEvent2 {
+  background-color: rgba(255, 163, 0, 0.82);
+  width: 93%;
+}
+
+.dm {
+  width: 100%;
+}
+
+.hosting {
+  margin-top: 7%;
+  margin-bottom: 10%;
+}
+
+.invitedButton {
+  background-color: #dfe3ee;
+}
+
+.inviteButton {
+  float: right;
+}
+
+.invite {
+  display: inline;
+}
+
+.users {
+  margin-bottom: 3%
+}
+
+.goingButton {
+  background-color: #8b9dc3;
+}
+
+.hostingButton {
+  background-color: #3b5998;
+}
+
+/* EventPage CSS Styles */
+
+.eventDisplayContainer {
+  border: 1px solid grey;
+  padding: 3%;
+}
+
+.eventHeader {
+  text-align: center;
+}
+
+
+
+.finalMovieBox {
+  display:flex;
+  border: 1px solid grey;
+  padding: 3%;
+}
+
+.voterBox {
+  display:flex;
+  justify-content:center;
+  border: 1px solid grey;
+  padding: 3%;
+}
+
+.foodBox {
+  display:flex;
+  justify-content:center;
+  border: 1px solid grey;
+  padding: 3%;
+}
+
+.boxItem {
+  margin:10px;
+  padding: 3%;
+}
+
+.movieOption {
+  width:100%;
+}
+
+.buttonWrapper {
+  text-align: center;
+}
+
+#voteButton {
+  /* position: absolute;
+  top: 50%; */
+}
+
+.eventDetailBox {
+  display:flex;
+  border: 1px solid grey;
+  padding: 3%;
+  width: 70%;
+}
+
+.eventVoteBox {
+  display:flex;
+  border: 1px solid grey;
+  padding: 3%;
+}
+
+.imageBox {
+  width: 30%
+}
+
+@keyframes revealtwo {
+  from {height: 0px;}
+  to {height: 420px;}
+}
+
+.mapOfEvents {
+  width: 100%;
+  height: 420px;
+  animation-name: revealtwo;
+  animation-duration: 1.3s;
+  text-align: center;
+  overflow: auto;
+}
+
+.video-list-entry {
+
+  width: 100%;
+  /* margin-right: 1%; */
+  /* transition: width 2s; */
+}
+
+
+.individualRecipe {
+  display: inline-block;
+  margin: 0px 2px 0px 2px;
+  text-align: center;
+  overflow: hidden;
+  width: 300px;
+  /* border: solid 2px rgb(96, 218, 218); */
+  /* width: 40%; */
+}
+
+.submitFood, .searchFood {
+  width: 100%;
+  text-align: center;
+  font-style: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.sfInputGroup {
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 25%;
+}
+
+#chatTextInput {
+  width: 100%;
+}
+#chooseThis .text {
+  position: relative;
+  bottom:200px;
+  visibility: hidden;
+}
+
+#chooseThis:hover .text {
+  visibility: visible;
+}
+
+#chooseThis:hover .foodImage {
+  opacity: .5;
+}
+
+.noOverFlow {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.recipeInfo {
+  position: relative;
+  bottom: 22px;
+}
+
+.pickedFoods {
+  margin: auto;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  border: solid 1px;
+  padding: 5px;
+  display: inline-block;
+}
+
+.pickedFoodImage {
+  width: 300px;
+  margin: 0px 4px 0px 0%;
+}
+
+.pickedFoodImageLast {
+  width: 300px;
+  margin: 0px 0% 0px 0%;
+}
+/* 
+.eventDrop {
+  animation-name: reveal;
+  animation-duration: 2s;
+} */
+/* .foodInput {
+  width: auto;
+} */
+/*.navLinks {
+  display: flex;
+  justify-content: space-between;
+}*/
+/* NAV BAR STYLING 
+
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.Link {
+    display: block;
+    color: #000;
+    margin-left:10%;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.Link.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.Link:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+*/
+
+#appBody {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1%;
+}
+
+/* .chatMessageText {
+  border: 1px solid black;
+  border-radius: 3px;
+  padding-left: 1%;
+} */
+
+#messageDisplayContainer .list-group-item {
+  border-color: grey !important;
+}

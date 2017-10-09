@@ -1,19 +1,13 @@
 const mongoose = require('mongoose');
 
 var MovieQueueSchema = new mongoose.Schema({
-  upvotes: Number,
-  downvotes: Number,
-  poster: String, 
-  overview: String,
-  releaseDate: String,
   title: String,
-  popularity: Number,
-  voteCount: Number,
-  voteAvg: Number
-  event: { type: String,
-    required: true
-  }
-
+  poster: String,
+  overview: String,
+  eventId: String,
+  votes: Number,
+  totalUserVotes: Number,
+  votesByUser: Array 
 });
 
-module.exports = mongoose.model('Job', JobSchema);
+module.exports = mongoose.model('Movie', MovieQueueSchema);

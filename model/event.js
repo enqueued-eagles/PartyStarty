@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-var eventSchema = new mongoose.Schema({
+var EventSchema = new mongoose.Schema({
   eventTitle: {
     type: String,
     required: true
@@ -9,12 +9,14 @@ var eventSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  eventTime: {
-  	type: Date
-  },
-  eventUsers: {
-  	type: Array
-  }
+  eventDate: Date,
+  eventTime: String,
+  eventDesc: String,
+  eventFinalized: Boolean,
+  eventHostName: String,
+  eventMoviePicture: String,
+  eventPublic: Boolean,
+  finalMovieId: String
 });
 
 module.exports = mongoose.model('Event', EventSchema);
